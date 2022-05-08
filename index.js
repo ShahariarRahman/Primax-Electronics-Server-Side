@@ -46,6 +46,13 @@ const run = async () => {
             res.send({ token });
         });
 
+        app.get('/inventory', async (req, res) => {
+            const query = {};
+            const cursor = inventoryCollection.find(query);
+            const result = await cursor.toArray();
+            res.send(result);
+        });
+
 
     }
     finally {
