@@ -67,6 +67,19 @@ const run = async () => {
         });
 
 
+        app.put('/inventory', async (req, res) => {
+            const id = req.query.id;
+            const quantity = req.query.quantity;
+
+            const query = { _id: ObjectId(id) }
+            const updateDoc = {
+                $set: { quantity }
+            }
+            const result = await inventoryCollection.updateOne(query, updateDoc);
+            res.send(result);
+        })
+
+
     }
     finally {
 
