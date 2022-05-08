@@ -101,7 +101,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send('server is running');
+    res.send('Primax Electronics Server Is Running');
 });
 
 app.listen(port, () => console.log('Listening port', port));
