@@ -79,6 +79,20 @@ const run = async () => {
             res.send(result);
         })
 
+        app.get('/myitem', verifyJWT, async (req, res) => {
+            const email = req.query?.email;
+            const decodedEmail = req.decoded?.email;
+
+            if (email === decodedEmail) {
+                const query = { email };
+                const cursor = inventoryCollection.find(query);
+                const result = await cursor.toArray();
+                res.send(result);
+            }
+            else {
+                return res.status(403).send({ massage: 'Forbidden', status: 403 })
+            }
+        });
 
     }
     finally {
