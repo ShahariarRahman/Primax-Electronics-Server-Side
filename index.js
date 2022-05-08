@@ -53,6 +53,19 @@ const run = async () => {
             res.send(result);
         });
 
+        app.post('/inventory', async (req, res) => {
+            const inventory = req.body;
+            const result = await inventoryCollection.insertOne(inventory);
+            res.send(result);
+        });
+
+        app.delete('/inventory/:id', async (req, res) => {
+            const id = req.params;
+            const query = { _id: ObjectId(id) }
+            const result = await inventoryCollection.deleteOne(query);
+            res.send(result);
+        });
+
 
     }
     finally {
