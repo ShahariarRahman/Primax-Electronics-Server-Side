@@ -11,7 +11,7 @@ If anyone want to be a supplier he/she have to make a registration to the websit
 
 ### Features/functionality:
 
-* This website is a make for Professional Wedding Photographer. 
+* This website is a make for storing Electronics items.
 * Homage: Homepage Contain Introduction of website, Top six inventory item  and a  Reviewing Form.
 * Login: In Login page used can log in using Google or Email Password System which secured by JSON Web Token.
 * Registration: In Registration page user can log in using Google or Email Password System which also secured by JSON Web Token.
