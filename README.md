@@ -1,6 +1,6 @@
 # Primax Electronics
 
-### Visit Website: [Client-Side](https://primax-electronics.web.app/) , [Server Side](https://primax-electronics.herokuapp.com/)
+### Visit Website: [Client-Side](https://primax-electronics.web.app/) , [Server-Side](https://primax-electronics.herokuapp.com/)
 ### Source Code: [Client-Side](https://github.com/ShahariarRahman/Primax-Electronics-Client-Side)
 
 
